@@ -1,5 +1,6 @@
 import Wallet from "./Wallet";
 import Transfer from "./Transfer";
+import Footer from "./Footer";
 import "./App.scss";
 import { useState } from "react";
 
@@ -25,7 +26,11 @@ function App() {
         setIsConnected={setIsConnected}
       />
       <Transfer setBalance={setBalance} address={address} privateKey={privateKey} />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
+
   );
 }
 
